@@ -14,10 +14,12 @@
 ActiveRecord::Schema.define(version: 20140212051915) do
 
   create_table "sites", force: true do |t|
-    t.string   "url"
-    t.string   "hash"
+    t.string   "url",        null: false
+    t.string   "token",      null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "sites", ["token"], name: "index_sites_on_token", unique: true
 
 end
