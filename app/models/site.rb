@@ -12,6 +12,8 @@
 class Site < ActiveRecord::Base
   before_create :generate_token
 
+  validates_url :url, message: 'site.invalid_url'
+
   def generate_token
     token_length = Site.token_length
     self.token = loop do

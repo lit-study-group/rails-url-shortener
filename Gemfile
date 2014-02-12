@@ -15,6 +15,10 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'zeroclipboard-rails'
 
+gem 'validate_url'
+
+gem 'rails_best_practices'
+
 group :production do
   gem 'pg'
 end

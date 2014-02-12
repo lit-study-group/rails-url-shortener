@@ -8,6 +8,11 @@
     <div class="col-lg-2">
       <%= f.text_field :url %>
     </div>
+    <% unless @site.errors[:url].empty? %>
+      <div class="col-lg-3 col-lg-offset-1 alert-danger">
+        <%= t @site.errors[:url].first %>
+      </div>
+    <% end %>
   </div>
   <div class="row">
     <div class="col-lg-1">

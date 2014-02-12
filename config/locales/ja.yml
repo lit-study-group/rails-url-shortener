@@ -9,3 +9,4 @@ ja:
     base_url: 元のURL
     shorten_other: 別のURLを圧縮する
     url_copied: コピーされました
+    invalid_url: URLは正しくありません
