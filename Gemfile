@@ -13,6 +13,8 @@ gem 'bootstrap-sass', '~> 3.1.0'
 
 gem 'jbuilder', '~> 1.2'
 
+gem 'zeroclipboard-rails'
+
 group :production do
   gem 'pg'
 end

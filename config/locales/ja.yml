@@ -1,9 +1,11 @@
 ja:
   btn:
     shorten: 圧縮する
+    copy: コピーする
   site:
     shorten_url: URLを圧縮する
     url: URL
     url_shortened: URLが圧縮されました
     base_url: 元のURL
     shorten_other: 別のURLを圧縮する
+    url_copied: コピーされました

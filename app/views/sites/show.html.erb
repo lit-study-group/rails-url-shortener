@@ -9,10 +9,18 @@
 <div class="row">
   <div class="col-lg-2"><%= t 'site.shortened_url' %></div>
   <div class="col-lg-10">
-    <%= redirect_url(token: @site.token) %>
+    <span id="site-url">
+      <%= redirect_url(token: @site.token) %>
+    </span>
+    <button id="copy-btn" class="btn btn-default btn-xs">
+      <%= t 'btn.copy' %>
+    </button>
+    <span id="url-copied" class="label label-success">
+      <%= t 'site.url_copied' %>
+    </span>
   </div>
 </div>
 
 <div class="row other-site">
-  <%= link_to t('site.shorten_other'), root_path %>
+  <%= link_to t('site.shorten_other'), root_path, class: 'btn btn-default' %>
 </div>
