@@ -3,6 +3,7 @@ ja:
     shorten: 圧縮する
     copy: コピーする
   site:
+    url_shortener: URL圧縮
     shorten_url: URLを圧縮する
     url: URL
     url_shortened: URLが圧縮されました
