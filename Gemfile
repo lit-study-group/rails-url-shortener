@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.2'
 
-gem 'sqlite3'
-
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 
@@ -17,8 +15,6 @@ gem 'zeroclipboard-rails'
 
 gem 'validate_url'
 
-gem 'rails_best_practices'
-
 group :production do
   gem 'pg'
 end
@@ -29,10 +25,12 @@ end
 
 group :development, :test do
   gem 'jazz_hands'
+  gem 'sqlite3'
 end
 
 group :development do
   gem 'annotate'
   gem 'better_errors'
+  gem 'rails_best_practices'
 end
 
