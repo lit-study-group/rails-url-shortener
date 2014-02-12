@@ -9,6 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 3.1.0'
 
 gem 'jbuilder', '~> 1.2'
 
@@ -17,7 +18,6 @@ group :production do
 end
 
 group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
@@ -26,6 +26,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'annotate'
   gem 'better_errors'
 end
 
