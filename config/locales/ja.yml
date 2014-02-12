@@ -1,0 +1,9 @@
+ja:
+  btn:
+    shorten: 圧縮する
+  site:
+    shorten_url: URLを圧縮する
+    url: URL
+    url_shortened: URLが圧縮されました
+    base_url: 元のURL
+    shorten_other: 別のURLを圧縮する

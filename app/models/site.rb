@@ -22,7 +22,8 @@ class Site < ActiveRecord::Base
 
   def self.token_length
     possible_chars_num = 64 # A-Za-z0-9_-
-    min_needed_length = Math.log(self.count, possible_chars_num).ceil
+    # +1 to avoid log(0)
+    min_needed_length = Math.log(self.count + 1, possible_chars_num).ceil
     min_needed_length + 2 # use a longer token to avoid clashes
   end
 end

@@ -1,0 +1,17 @@
+<h1><%= t 'site.shorten_url' %></h1>
+
+<%= form_for @site do |f| %>
+  <div class="row">
+    <div class="col-lg-1">
+      <%= f.label :url, t('site.url') %>
+    </div>
+    <div class="col-lg-2">
+      <%= f.text_field :url %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-1">
+      <%= f.submit t('btn.shorten'), class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
